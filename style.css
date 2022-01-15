@@ -1,7 +1,8 @@
 body{
     margin:0;
     padding: 0;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins','Heebo', sans-serif;
+    /* background-color: #ffffff; */
 }
 
 
@@ -12,10 +13,14 @@ header{
     border: 3px solid black;
     /* remove */
     margin:0px;
-    padding: 40px;
+    padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+label{
+    font-size: 24px;
+    font-weight: 700;
 }
 
 #title{
@@ -36,7 +41,9 @@ header{
     border: 2px solid green;
     /* remove */
     margin:0px;
-    padding:0px;
+    padding:0px 15px;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 
@@ -44,9 +51,11 @@ header{
 /* --------------------------
 ----------------Main--------------------------
 --------------------------- */
+
 .container{
     margin-top: 6px;
     border: 2px solid black;
+    /* remove */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +63,7 @@ header{
 
 #heads{
     border: 2px solid green;
+    /* remove */
     font-size: 52px;
     margin-bottom: 0;
 
@@ -61,7 +71,8 @@ header{
 
 #heads-p{
     border: 2px solid darkblue;
-    font-size: 20px;
+    /* remove */
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 35px;
 
@@ -70,16 +81,17 @@ header{
 .opening div a{
     color:white;
     text-decoration: none;
-    border: 2px solid #708090;
-    background-color: tomato;
+    border: 1px solid;
+    background-color: rgba(224, 44, 109, 0.87);
     border-radius: 29px;
     font-size: 20px;
-    padding: 12px;
+    padding: 12px 18px;
 }
 
 .opening div img{
     border: 4px solid black;
-    width: 25em;
+    /* remove */
+    width: 70%;
     position: relative;
     right: -100px;
 
@@ -87,6 +99,7 @@ header{
 
 .opening div img:hover{
     border: 4px solid black;
+    /* remove */
     /* width: 32em; */
     position: relative;
     animation: rotate 5s infinite;
@@ -95,16 +108,19 @@ header{
 
 @keyframes rotate{
     0%{
-        transform: rotate(0deg) scale(1.5);
+        transform: rotate(0deg) scale(1.3);
     }
-    50%{
-        transform: rotate(30deg) scale(1.5);
+    25%{
+        transform: rotate(30deg) scale(1.3);
     }
+    /* 50%{
+        transform: rotate(0deg) scale(1.3);
+    } */
     75%{
-        transform: rotate(-30deg) scale(1.5);
+        transform: rotate(-30deg) scale(1.3);
     }
     100%{
-        transform: rotate(0deg) scale(1.5);
+        transform: rotate(360deg) scale(1.5);
     }
 }
 
@@ -118,3 +134,128 @@ header{
 /* .half-width img{
     width: 90%;
 } */
+
+
+/* --------------------
+Sponsors----------------
+ ------------------------*/
+
+hr{
+    height:2px;
+    width:70%; 
+    border-width:0; 
+    color:grey;
+    background-image: linear-gradient(to right, rgb(228, 221, 221), rgb(143, 140, 140), rgb(228, 221, 221));
+}
+
+#sponsors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#sponsors img{
+    padding: 30px;
+}
+
+.star{
+    color: #FB8200;
+}
+
+#popular-title{
+    font-size: 28px;
+    font-weight: bolder;
+    border: 4px solid black;
+    /* remove */
+    /* remove */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 5px solid black;
+    /* remove */
+    /* grid-column-gap: 24px; */
+    justify-self: center;
+    align-self: center;
+    place-items: center;
+    row-gap: 24px;
+    column-gap: 100px;
+    margin: 0 280px; 
+
+}
+
+.product{
+    /* border: 2px solid grey; */
+    padding: 10px;
+    box-shadow: 5px 10px 18px #d6d6d6;
+    height: 500px;
+    border-radius: 10px;
+}
+span{
+    font-weight: bold;
+}
+
+.product-details h3{
+    color: grey;
+}
+
+#seeMore{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    margin-right: 280px;
+}
+
+#seeMore a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#third{
+    margin: 0 220px;
+}
+#third p{
+    text-align: justify;
+}
+#third a{
+    text-decoration: none;
+    border: 1px solid;
+    background-color: rgba(224, 44, 109, 0.87);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+    /* remove */
+    background-color:rgb(3, 24, 63);
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#s-media{
+    margin-top: 10px;
+}
+.fab{
+    padding-right: 10px;
+}
+
