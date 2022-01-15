@@ -10,10 +10,10 @@ body{
 ---------- Header-------------------
 -------------------------- */
 header{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     /* remove */
     margin:0px;
-    padding: 0 40px;
+    padding: 40px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,10 +23,7 @@ label{
     font-weight: 700;
 }
 
-#title{
-    border: 2px solid darkblue;  
-    /* remove */
-}
+
 
 
 #nav a{
@@ -38,7 +35,7 @@ label{
 #nav ul {
     list-style-type: none;
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* remove */
     margin:0px;
     padding:0px 15px;
@@ -54,7 +51,7 @@ label{
 
 .container{
     margin-top: 6px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* remove */
     display: flex;
     justify-content: center;
@@ -62,7 +59,7 @@ label{
 }
 
 #heads{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* remove */
     font-size: 52px;
     margin-bottom: 0;
@@ -70,7 +67,7 @@ label{
 }
 
 #heads-p{
-    border: 2px solid darkblue;
+    /* border: 2px solid darkblue; */
     /* remove */
     font-size: 16px;
     font-weight: 500;
@@ -89,7 +86,7 @@ label{
 }
 
 .opening div img{
-    border: 4px solid black;
+    /* border: 4px solid black; */
     /* remove */
     width: 70%;
     position: relative;
@@ -98,7 +95,7 @@ label{
 }
 
 .opening div img:hover{
-    border: 4px solid black;
+    /* border: 4px solid black; */
     /* remove */
     /* width: 32em; */
     position: relative;
@@ -120,7 +117,7 @@ label{
         transform: rotate(-30deg) scale(1.3);
     }
     100%{
-        transform: rotate(360deg) scale(1.5);
+        transform: rotate(360deg);
     }
 }
 
@@ -166,7 +163,7 @@ hr{
 #popular-title{
     font-size: 28px;
     font-weight: bolder;
-    border: 4px solid black;
+    /* border: 4px solid black; */
     /* remove */
     /* remove */
     display: flex;
@@ -177,7 +174,7 @@ hr{
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 5px solid black;
+    /* border: 5px solid black; */
     /* remove */
     /* grid-column-gap: 24px; */
     justify-self: center;
@@ -237,7 +234,7 @@ span{
 footer{
     width: 100%;
     height: 180px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* remove */
     background-color:rgb(3, 24, 63);
     color: white;
@@ -286,13 +283,17 @@ footer p{
         padding: 0;
     }
     .opening div img{
-        border: 4px solid black;
+        /* border: 4px solid black; */
         margin-left: 12%;
         position: relative;
         right: 0px;
     }
     .half-width{
         width:100%;
+    }
+
+   article p, article h2, article a{
+        margin: 10px 10px;
     }
 
     .products{
@@ -318,6 +319,7 @@ footer p{
     }
     #third img{
         width: 100%;
+        margin: 0;
     }
 
 }
@@ -325,27 +327,28 @@ footer p{
 /* ------------------
 -------------Tablet ----------------
 ---------------------------*/
-@media only screen  and (min-width:688px) and (max-width:992px){
+@media only screen  and (min-width:688px) and (max-width:1200px){
 
 
-    /* .opening, .last{
+    .opening{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        margin: 20px;
-        padding: 0;
-    } */
+        /* margin: 20px;
+        padding: 0; */
+        flex-wrap: wrap;
+    }
     .opening div img{
-        border: 4px solid black;
+        /* border: 4px solid black; */
         margin-left: -10%;
         position: relative;
         right: 0px;
         width: 100%;
     }
-    /* .half-width{
+    .half-width{
         width:100%;
-    } */
+    }
 
     .products{
         display: grid;
@@ -365,11 +368,18 @@ footer p{
         margin-top: 10px;
         margin-right: 0px;
     }
-    #third{
+
+    .last{
+        display: flex;
+        flex-direction: column;
+        justify-items: space-evenly;
+        flex-wrap: wrap;
+    }
+    /* #third{
         margin: 0 0px;
     }
     #third img{
         width: 100%;
-    }
+    } */
 
 }
